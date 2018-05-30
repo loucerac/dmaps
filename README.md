@@ -1,6 +1,6 @@
 
 # Hipathia and Disease Maps
-Development repository to process the **DNA-repair** map with **Hipathia**.
+Development repository to process the [Disease Maps](http://disease-maps.org/) map with [Hipathia](http://bioconductor.org/packages/release/bioc/html/hipathia.html).
 
 ## Install
  - Clone the repository
@@ -30,7 +30,7 @@ Notebooks 1 and 2 represent different experiments of the same approach: parse th
 The automatic graph conversion provided by the `read_sbml` library poses serious problems: for instance, the edges pointing to other edges, such as those labeled as modifiers, are missing. In the end most inhibitions are lost during the conversion.
 
 ### Metadata parsing
-- Reactions labeled as *HETERODIMER_ASSOCIATION* can be removed as they represent complex formation processes.
+- Reactions labeled as *HETERODIMER_ASSOCIATION* can be removed as they represent complex-formation processes.
 - For each reaction that includes modifiers we include one auxiliary node (with input value 1) named `aux`.
     - Each node labeled as *reactant* is connected to `aux` as *input* and *output*, respectively.
     - Each node labeled as *product* is connected to `aux` as output and *input*, respectively.
