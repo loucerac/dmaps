@@ -36,9 +36,17 @@ The automatic graph conversion provided by the `read_sbml` library poses serious
     - Each node labeled as *product* is connected to `aux` as output and *input*, respectively.
     - Each node labeled as *modifier* is connected to `aux` as input and output, respectively.
 
+Figure 0 shows he most basic example, with one product, one reactant and two modifiers.
+
+<div style="text-align:center">
+  <img src ="img/network_modifier_example_original.png" />
+  <br> Figure 0: Basic modifier example. <br>
+</div>
+
+<br><br>
 For example, suppose that we have the following sequence `s1,s2/s5,s6/s3,s4` where the nodes are labeled as *reactant/product/modifiers*. Figure 1 shows the resulting network after we apply the previous rules.
 
-Note however that we have provided the most general example, as the number of reactants, products and modifiers can be any number greater than 0.
+Note, however, that we have provided the most general example, as the number of reactants, products and modifiers can be any number greater than 0.
 
 <div style="text-align:center">
   <img src ="img/network_modifier_example.png" />
