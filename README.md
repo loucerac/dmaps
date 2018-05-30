@@ -1,6 +1,6 @@
 
 # Hipathia and Disease Maps
-Development repository to process the **DNA-repair** map with **Hipathia**.
+Development repository to process the [Disease Maps](http://disease-maps.org/) map with [Hipathia](http://bioconductor.org/packages/release/bioc/html/hipathia.html).
 
 ## Install
  - Clone the repository
